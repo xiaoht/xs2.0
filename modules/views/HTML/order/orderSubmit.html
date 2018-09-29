@@ -61,6 +61,29 @@
              -webkit-border-radius: 5px; /* Webkit browsers */
              border-radius:5px;
          }
+         .input_control{
+             width:360px;
+             margin:20px auto;
+         }
+         input[type="text"]{
+             box-sizing: border-box;
+             text-align:center;
+             font-size:1.1em;
+             height:2.1em;
+             border-radius:4px;
+             border:1px solid #c8cccf;
+             color:#6a6f77;
+             -web-kit-appearance:none;
+             -moz-appearance: none;
+             display:block;
+             outline:0;
+             padding:0 1em;
+             text-decoration:none;
+             width:100%;
+         }
+         input[type="text"]:focus{
+             border:1px solid #ff7496;
+         }
     </style>
 </head>
 <body>
@@ -96,6 +119,9 @@
                 <i class="icon-chevron-thin-right iconRight ion-ios-arrow-right"></i>
                 <div class="clear"></div>
             </div>
+        </div>
+        <div class="input_control">
+            <input class="staffid" type="text" class="form_input" placeholder="营销代码(可输入9位数字)"/>
         </div>
         <!-- 支付信息 -->
         <div class="container pay-detial">

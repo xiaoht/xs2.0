@@ -379,7 +379,10 @@ $(function () {
         if (stages) {
             dataParam += "&stages=" + stages;
         }
-
+        var staffid = $('.staffid').val();
+        if(staffid != '' && (/^1\d{8}$/i.test(mobile))) {
+            dataParam += "&staffid=" + staffid;
+        }
         //成功后执行的方法
         function sucGetOrderSub(response) {
             // console.log(response);
