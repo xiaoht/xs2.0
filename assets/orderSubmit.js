@@ -324,7 +324,6 @@ $(function () {
 
         if(!validate()){
             getTips('验证码不正确，请重新输入');
-
             return;
         }
         
@@ -379,12 +378,10 @@ $(function () {
         if (stages) {
             dataParam += "&stages=" + stages;
         }
-        var staffid = $('.staffid').val();
+
         if(staffid != '' && (/^1\d{8}$/i.test(staffid))) {
-            dataParam += "&staffid=" + staffid;
-        }else if(staffid != '' && !(/^1\d{8}$/i.test(staffid))){
-            getTips('营销代码格式不正确，请重新输入或请不要输入');
-            return;
+            dataParam += "&staffid=";
+            dataParam += staffid;
         }
         //成功后执行的方法
         function sucGetOrderSub(response) {
