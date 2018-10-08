@@ -380,7 +380,7 @@ $(function () {
             dataParam += "&stages=" + stages;
         }
         var staffid = $('.staffid').val();
-        if(staffid != '' && (/^1\d{8}$/i.test(mobile))) {
+        if(staffid && staffid != '' && (/^1\d{8}$/i.test(mobile))) {
             dataParam += "&staffid=" + staffid;
         }
         //成功后执行的方法
