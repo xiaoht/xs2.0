@@ -322,6 +322,12 @@ $(function () {
             getTips('发票信息不完整');
         }
 
+        var staffid = $('.staffid').val();
+        if(staffid != '' && !(/^1\d{8}$/i.test(staffid))) {
+            getTips('营销代码格式不正确，请重新输入或请不要输入！');
+            return;
+        }
+
         if(!validate()){
             getTips('验证码不正确，请重新输入');
             return;
@@ -380,8 +386,7 @@ $(function () {
         }
 
         if(staffid != '' && (/^1\d{8}$/i.test(staffid))) {
-            dataParam += "&staffid=";
-            dataParam += staffid;
+            dataParam += "&staffid=" + staffid;
         }
         //成功后执行的方法
         function sucGetOrderSub(response) {
