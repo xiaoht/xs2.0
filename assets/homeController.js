@@ -7,7 +7,7 @@ makerApp.controller('homeController', ['$scope', '$http', '$state', '$ionicSlide
         // localStorage.token = "";
         // localStorage.selected_first_level_id = "";
         // alert('homeController')
-        doLogin();
+        //doLogin();
         ///** 获取微信code用于支付 */
         //if (PAYNO == 1) {
         //    if (window.location.href.indexOf("code") != -1) {
