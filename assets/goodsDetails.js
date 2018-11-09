@@ -392,8 +392,8 @@ $(function() {
 
     // 原生返回
     back.onclick = function() {
-
-        if (paramDic["type"] == "ios") {
+        window.location.href='/#/home';
+        /*if (paramDic["type"] == "ios") {
             window.location.href = "ios://back";
         } else if (paramDic["type"] == "Android") {
             JSkit.back();
@@ -404,7 +404,7 @@ $(function() {
             } else {
                 hybrid_app.back();
             }
-        }
+        }*/
     };
 
     // 原生分享
