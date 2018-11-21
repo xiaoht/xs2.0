@@ -464,9 +464,7 @@ function checkLogin(){
    // }
 }
 
-if (window.location.href.indexOf("/#/home") > 0 ||
-    window.location.href.indexOf("/orderDetail.html") > 0 ||
-    window.location.href.indexOf("/orderList.html") > 0
+if (window.location.href.indexOf("/#/home") > 0
 ) {
     window.onload = checkLogin();
 }
